@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="target"></div>
+</body>
+<script type="text/javascript">
+	var Ninja = function(name){
+		var speed = 3;
+		var strength = 3;
+		this.name = name;
+		this.health = 100;
+		
+		this.sayName = function(){
+		console.log(this.name);
+		};
+		this.showStats = function(){
+		console.log(this.health + " " + speed + " " + strength)
+		};
+		this.drinkSake = function(){
+		this.health += 10;
+		};
+		this.punch = function(ninja){
+		if (ninja instanceof Ninja){
+		ninja.health -= 5;
+		};
+		};
+		this.kick = function(ninja){
+		if (ninja instanceof Ninja){
+		ninja.health -= (strength * 15);
+		};
+		};
+	}
+	var ninja1 = new Ninja('Hyabusa');
+	var ninja2 = new Ninja('Kage');
+
+	ninja1.sayName();
+	ninja1.showStats();
+	ninja1.punch(ninja2);
+	ninja2.showStats();
+	ninja1.kick(ninja2);
+	ninja2.showStats();
+
+</script>
+</html>

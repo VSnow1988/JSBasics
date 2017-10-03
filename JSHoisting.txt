@@ -1,0 +1,26 @@
+1.) Will output
+	undefined
+
+2.) Will output
+	undefined
+
+3.) Will ouput
+	super cool
+
+4.)Will output
+	chicken
+	undefined
+
+5.)Will ouput
+	undefined
+	undefined
+
+6.)Will output
+	undefined
+	disco
+
+7.)Will output
+	syntax error
+	
+
+	

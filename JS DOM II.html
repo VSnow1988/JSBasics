@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="target"></div>
+</body>
+<script type="text/javascript">
+	let students = [
+    {name: 'Remy', cohort: 'Jan'},
+    {name: 'Genevieve', cohort: 'March'},
+    {name: 'Chuck', cohort: 'Jan'},
+    {name: 'Osmund', cohort: 'June'},
+    {name: 'Nikki', cohort: 'June'},
+    {name: 'Boris', cohort: 'June'}
+];
+
+for ( let i = 0; i < students.length; i++){
+	for (let x in students[i]){
+	console.log(x + ":" + students[i][x]);
+}	
+}
+
+
+let users = {
+    employees: [
+        {'first_name':  'Miguel', 'last_name' : 'Jones'},
+        {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+        {'first_name' : 'Nora', 'last_name' : 'Lu'},
+        {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+    ],
+    managers: [
+       {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+       {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+    ]
+ };
+
+
+ for (let a in users){
+	console.log(a.toUpperCase());
+	for ( let i = 0; i < users[a].length; i++ ){
+		let last = users[a][i]['last_name'].toUpperCase();
+		let first = users[a][i]['first_name'].toUpperCase();
+		console.log( 
+		i + "-" + first + "' " +
+		last + " - " + (first.length + last.length)
+		);
+	}
+	
+ }
+
+
+</script>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+  <script>
+	function starString(num){
+		let draw = "";
+		while (num > 0){
+		 num --;
+		 draw += "*";
+		}
+		return(draw);
+	}
+	var stars = starString(8);
+	console.log(stars);
+	
+	function drawStars(arr){
+		for ( let i = 0; i < arr.length; i++){
+			if ( typeof arr[i] == 'number'){
+				console.log(starString(arr[i]));
+			}
+			else if (typeof arr[i] == 'string'){
+				let draw="";
+				let length = arr[i].length;
+					while (length > 0){
+					 length--;
+					 draw += arr[i][0].toLowerCase();
+					}
+				console.log(draw);
+				
+			}
+		}
+	}
+	
+	
+	drawStars([1,2,3,4,5]);
+	drawStars([1,"Banana",3]);;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    </script>  
+</head>
+<body> 
+</body>
+</html>
